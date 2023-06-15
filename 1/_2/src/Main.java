@@ -5,7 +5,7 @@ import java.util.Arrays;
 каждый элемент которого равен разности элементов двух входящих массивов в той же ячейке.
 Если длины массивов не равны, необходимо как-то оповестить пользователя.
  */
-class SizeException extends Exception {
+class SizeException extends RuntimeException {
     public SizeException(String message) {
         super(message);
     }
